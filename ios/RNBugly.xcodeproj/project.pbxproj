@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 
 
-		5E555C0D2413F4C50049A1A2 /* Bugly.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Bugly.mm */; };
+		5E555C0D2413F4C50049A1A2 /* RNBugly.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNBugly.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,11 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libBugly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBugly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libRNBugly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBugly.a; sourceTree = BUILT_PRODUCTS_DIR; };
 
 
-		B3E7B5881CC2AC0600A0062D /* Bugly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bugly.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* Bugly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bugly.mm; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* RNBugly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBugly.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RNBugly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RNBugly.mm; sourceTree = "<group>"; };
 
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libBugly.a */,
+				134814201AA4EA6300B7C361 /* libRNBugly.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,8 +57,8 @@
 			children = (
 
 
-				B3E7B5881CC2AC0600A0062D /* Bugly.h */,
-				B3E7B5891CC2AC0600A0062D /* Bugly.mm */,
+				B3E7B5881CC2AC0600A0062D /* RNBugly.h */,
+				B3E7B5891CC2AC0600A0062D /* RNBugly.mm */,
 
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
@@ -81,7 +81,7 @@
 			);
 			name = Bugly;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libBugly.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNBugly.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +123,7 @@
 			files = (
 
 
-				5E555C0D2413F4C50049A1A2 /* Bugly.mm in Sources */,
+				5E555C0D2413F4C50049A1A2 /* RNBugly.mm in Sources */,
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
