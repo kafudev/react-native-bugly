@@ -5,7 +5,6 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 import com.tencent.bugly.crashreport.CrashReport
-import com.tencent.bugly.crashreport.strategy
 
 class BuglyModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
@@ -24,20 +23,21 @@ class BuglyModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaM
     @ReactMethod
     fun setStrategy(AppChannel: String, AppVersion: String, AppPackageName: String) {
       if(AppChannel){
-        strategy.setAppChannel(AppChannel);  //设置渠道
+        CrashReport.setAppChannel(AppChannel);  //设置渠道
       }
       if(AppVersion){
-        strategy.setAppVersion(AppVersion);      //App的版本
+        CrashReport.setAppVersion(AppVersion);      //App的版本
       }
       if(AppPackageName){
-        strategy.setAppPackageName(AppPackageName);  //App的包名
+        CrashReport.setAppPackage(AppPackageName);  //App的包名
       }
     }
 
     // 设置Bugly初始化延迟
     @ReactMethod
     fun setAppReportDelay(time: Int) {
-      strategy.setAppReportDelay(time)
+      // jar包有问题
+      // CrashReport.setAppReportDelay(time)
     }
 
     // 设置标签
