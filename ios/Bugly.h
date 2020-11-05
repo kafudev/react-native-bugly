@@ -1,5 +1,5 @@
 #import <React/RCTBridgeModule.h>
 
-@interface Bugly : NSObject <RCTBridgeModule>
+@interface RNBugly : NSObject <RCTBridgeModule>
 
 @end
