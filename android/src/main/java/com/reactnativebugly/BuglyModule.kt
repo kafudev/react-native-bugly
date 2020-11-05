@@ -21,15 +21,15 @@ class BuglyModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaM
 
     // 设置strategy版本信息
     @ReactMethod
-    fun setStrategy(AppChannel: String, AppVersion: String, AppPackageName: String) {
-      if(AppChannel){
-        CrashReport.setAppChannel(AppChannel);  //设置渠道
+    fun setStrategy(appChannel: String, appVersion: String, appPackageName: String) {
+      if(appChannel != null){
+        CrashReport.setAppChannel(reactApplicationContext, appChannel);  //设置渠道
       }
-      if(AppVersion){
-        CrashReport.setAppVersion(AppVersion);      //App的版本
+      if(appVersion != null){
+        CrashReport.setAppVersion(reactApplicationContext, appVersion);      //App的版本
       }
-      if(AppPackageName){
-        CrashReport.setAppPackage(AppPackageName);  //App的包名
+      if(appPackageName != null){
+        CrashReport.setAppPackage(reactApplicationContext, appPackageName);  //App的包名
       }
     }
 
@@ -43,13 +43,13 @@ class BuglyModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaM
     // 设置标签
     @ReactMethod
     fun setSceneTag(tag: Int) {
-      CrashReport.setUserSceneTag(reactContext, tag)
+      CrashReport.setUserSceneTag(reactApplicationContext, tag)
     }
 
     // 设置是否开发设备
     @ReactMethod
     fun setIsDevelopmentDevice(isDebug: Boolean) {
-      CrashReport.setIsDevelopmentDevice(reactContext, isDebug)
+      CrashReport.setIsDevelopmentDevice(reactApplicationContext, isDebug)
     }
 
 }

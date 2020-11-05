@@ -18,16 +18,16 @@ RCT_REMAP_METHOD(multiply,
 }
 
 
-RCT_EXPORT_METHOD(setStrategy:(nullable NSString *)AppChannel AppVersion:(nullable NSString *)AppVersion  AppPackageName:(nullable NSString *)AppPackageName )
+RCT_EXPORT_METHOD(setStrategy:(nullable NSString *)appChannel appVersion:(nullable NSString *)appVersion  appPackageName:(nullable NSString *)appPackageName )
 {
-  if(AppChannel){
-    [Bugly setUserIdentifier:userId];
+  if(appChannel){
+    [Bugly setUserIdentifier:appChannel];
   }
-  if(AppVersion){
-    [Bugly updateAppVersion:AppVersion];
+  if(appVersion){
+    [Bugly updateAppVersion:appVersion];
   }
-  if(AppPackageName){
-    [Bugly setAppPackageName:AppPackageName];
+  if(appPackageName){
+    [Bugly setAppPackageName:appPackageName];
   }
 }
 
