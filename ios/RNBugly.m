@@ -27,12 +27,13 @@ RCT_EXPORT_METHOD(setStrategy:(nullable NSString *)appChannel appVersion:(nullab
     [Bugly updateAppVersion:appVersion];
   }
   if(appPackageName){
-    [Bugly setAppPackageName:appPackageName];
+    //
   }
 }
 
 RCT_EXPORT_METHOD(setAppReportDelay:(NSTimeInterval)time)
 {
+  //
 }
 
 RCT_EXPORT_METHOD(setSceneTag:(NSUInteger)tag)
@@ -42,5 +43,6 @@ RCT_EXPORT_METHOD(setSceneTag:(NSUInteger)tag)
 
 RCT_EXPORT_METHOD(setIsDevelopmentDevice:(BOOL )isDebug)
 {
+  //
 }
 @end
