@@ -1,6 +1,6 @@
 {
   "name": "@kafudev/react-native-bugly",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "react-native bugly 异常上报和运营统计",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
