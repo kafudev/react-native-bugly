@@ -22,13 +22,13 @@ class BuglyModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaM
     // 设置strategy版本信息
     @ReactMethod
     fun setStrategy(appChannel: String, appVersion: String, appPackageName: String) {
-      if(appChannel != null){
+      if(!appChannel.isNullOrEmpty()){
         CrashReport.setAppChannel(reactApplicationContext, appChannel);  //设置渠道
       }
-      if(appVersion != null){
+      if(!appVersion.isNullOrEmpty()){
         CrashReport.setAppVersion(reactApplicationContext, appVersion);      //App的版本
       }
-      if(appPackageName != null){
+      if(!appPackageName.isNullOrEmpty()){
         CrashReport.setAppPackage(reactApplicationContext, appPackageName);  //App的包名
       }
     }
